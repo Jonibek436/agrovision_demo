@@ -1,7 +1,9 @@
+
 # Environment and secrets
 .env
 .env.*
 !.env.example
+.envrc
 *.pem
 *.key
 secrets/
@@ -9,10 +11,17 @@ secrets/
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
+*.so
 .venv/
 venv/
+ENV/
 env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit/secrets.toml
 
 # Node
 node_modules/
@@ -22,10 +31,21 @@ build/
 # IDE
 .vscode/
 .idea/
+.spyderproject
+.spyproject
 
 # System
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs and databases
 *.log
+*.pid
+db.sqlite3
+db.sqlite3-journal
+
+# Other
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+tempCodeRunnerFile.py
