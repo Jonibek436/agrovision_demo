@@ -1,4 +1,8 @@
 
+# =====================================
+# AgroVision AI - Git Ignore
+# =====================================
+
 # Environment and secrets
 .env
 .env.*
@@ -13,39 +17,110 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
 .venv/
 venv/
 ENV/
 env/
+env.bak/
+venv.bak/
+*.egg
 *.egg-info/
+.installed.cfg
+MANIFEST
 .pytest_cache/
 .mypy_cache/
+.dmypy.json
 .ruff_cache/
-.streamlit/secrets.toml
+.pyre/
+.pytype/
+cython_debug/
 
-# Node
+# Python build and packaging
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+target/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Python tools
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+
+# Django / Flask
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+
+# Node.js / React / Vite
 node_modules/
 dist/
 build/
+.npm/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
 
 # IDE
 .vscode/
 .idea/
 .spyderproject
 .spyproject
+.ropeproject
+
+# Jupyter
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Documentation builds
+docs/_build/
+site/
+
+# Logs and temporary files
+*.log
+*.pid
+pip-log.txt
+pip-delete-this-directory.txt
+tempCodeRunnerFile.py
+
+# Databases and cache
+*.rdb
+*.aof
+.cache/
 
 # System
 .DS_Store
 Thumbs.db
-
-# Logs and databases
-*.log
-*.pid
-db.sqlite3
-db.sqlite3-journal
+desktop.ini
 
 # Other
-.ipynb_checkpoints/
-.coverage
 htmlcov/
-tempCodeRunnerFile.py
+.coverage
+*.bak
+*.tmp
