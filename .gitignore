@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # =====================================
 # AgroVision AI - Git Ignore
@@ -124,3 +125,29 @@ htmlcov/
 .coverage
 *.bak
 *.tmp
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> 3de2b35b00e5bbe7cf26cea02a86cc37dc839f33
